@@ -58,28 +58,7 @@ nav ul li a {
 	font-size:20px;
 }
 
-#contact{
-	text-align: left;
-	line-height: 2;
-	font-size:30px;
-}
 
-#contact p{
-	line-height: 1.5;
-	max-width: 60%;
-	font-size:20px;
-
-}
-
-#contact ul{
-	float:right;
-	font-size:20px;
-	list-style-type: none;
-}
-
-#contact img{
-	padding: 10px;
-}
 
 /* Style navigation links */
 nav ul li a {
@@ -428,4 +407,159 @@ div.desc {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media screen and (min-width: 1000px){
+	#contact{
+	text-align: left;
+	line-height: 2;
+	font-size:30px;
+}
+
+#contact p{
+	line-height: 1.5;
+	max-width: 60%;
+	font-size:20px;
+
+}
+
+#contact ul{
+	float:right;
+	font-size:20px;
+	list-style-type: none;
+}
+
+#contact img{
+	padding: 10px;
+}
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+  /* Adjust header navigation for mobile */
+  header {
+    position: static; /* Reset the header position */
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: center; /* Center-align navigation links */
+    padding: 0;
+  }
+
+  nav ul li {
+    padding: 15px 0; /* Add spacing between navigation options */
+  }
+
+  /* Style the "About Me" photo placeholder for mobile */
+  .photo-placeholder {
+    width: 100%; /* Make it full width */
+    max-width: 300px; /* Set a maximum width */
+    margin: 0 auto; /* Center-align the photo */
+    float: none; /* Reset the float */
+  }
+
+  .photo-placeholder img {
+    max-width: 100%; /* Ensure the photo doesn't overflow */
+    height: auto; /* Automatically adjust the height */
+  }
+
+  /* Adjust font sizes for mobile */
+  h1 {
+    font-size: 40px; /* Reduce the font size */
+  }
+
+  h2 {
+    font-size: 24px; /* Reduce the font size */
+  }
+
+  #about p {
+    font-size: 16px; /* Reduce the font size */
+    max-width: 100%; /* Ensure text doesn't overflow on small screens */
+  }
+
+  #contact ul {
+    text-align: center; /* Center-align social icons */
+    margin-top: 20px; /* Add spacing between icons and text */
+  }
+
+  #contact li {
+    display: flex; /* Display email and social icons side by side */
+    align-items: center; /* Vertically align items */
+    margin-bottom: 15px; /* Add spacing between list items */
+  }
+
+  #contact img {
+    margin-right: 10px; /* Add spacing between icons */
+  }
+
+  /* Adjust gallery images for mobile */
+  .gallery {
+    width: 100%; /* Make the gallery full width */
+    max-width: 100%; /* Ensure images don't overflow on small screens */
+  }
+
+  .gallery img, .gallery video {
+    width: 100%; /* Make images and videos fill the gallery */
+    height: auto; /* Automatically adjust the height */
+  }
+
+  /* Adjust font sizes in project descriptions for mobile */
+  .desc {
+    font-size: 14px; /* Reduce the font size */
+  }
+
+  /* Style the overlay for mobile */
+  #overlay {
+    background-color: rgba(0, 0, 0, 0.9); /* Darken the overlay background */
+  }
+
+  /* Adjust font size for slideshow captions on mobile */
+  .text, .numbertext, .exit {
+    font-size: 12px; /* Reduce the font size */
+  }
+  
+  /* Make sections taller on mobile */
+  section {
+    height: 175vh; /* Adjust the height as needed */
+  }
+
+  /* Add spacing between sections on mobile */
+  section:not(:first-child) {
+    margin-top: 30px; /* Increase the spacing between sections */
+  }
+
+  /* Adjust the contact section to fit within the viewport */
+  #contact {
+    padding: 20px; /* Add padding to the contact section */
+	line-height: 1.5;
+  }
+
+  #contact ul {
+    padding-left: 0; /* Remove the left padding from the contact ul */
+  }
+
+  #contact ul li {
+    list-style-type: none; /* Remove list-style for contact links */
+    margin-bottom: 10px; /* Add spacing between contact links */
+  }
+
+  #contact p {
+    max-width: 100%; /* Ensure the paragraph doesn't overflow */
+    font-size: 18px; /* Adjust the font size */
+  }
+
+  #home {
+    height: 100vh; /* Adjust the height as needed */
+  }
+  #projects p{
+	  line-height: 1.5;
+  }
+  
+  .photo-placeholder {
+	 margin-bottom:50px; 
+  }
 }
