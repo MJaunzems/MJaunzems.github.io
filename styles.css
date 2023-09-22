@@ -1,13 +1,10 @@
-/* Reset some default styles */
 body, h1, h2, p {
     margin: 0;
     padding: 0;
-	background-image: url("ep_naturalblack.png");
-	font-family: 'Courier New', monospace;
-	
+    background-image: url("ep_naturalblack.png");
+    font-family: 'Courier New', monospace;
 }
 
-/* Apply a background color and style to the header */
 header {
     position: fixed;
     width: 100%;
@@ -15,60 +12,54 @@ header {
     z-index: 1;
 }
 
-h1{
-	font-size:100px;
-	text-overflow: ellipsis;
+h1 {
+    font-size: 100px;
+    text-overflow: ellipsis;
 }
 
 nav ul li {
     margin: 0;
-    padding: 0 30px; /* Add spacing between navigation options */
+    padding: 0 30px;
 }
 
-/* Style the navigation menu */
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center; /* Center the navigation options horizontally */
-    align-items: center; /* Center the navigation options vertically */
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
-	backdrop-filter: blur(10px);
-	margin:0;
+    backdrop-filter: blur(10px);
+    margin: 0;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-	
 }
 
-#home{
-	font-size:40px;
+#home {
+    font-size: 40px;
 }
 
-#about{
-	text-align: left;
-	line-height: 2;
-	font-size:30px;
+#about {
+    text-align: left;
+    line-height: 2;
+    font-size: 30px;
 }
 
-#about p{
-	line-height: 1.5;
-	max-width: 60%;
-	font-size:20px;
+#about p {
+    line-height: 1.5;
+    max-width: 60%;
+    font-size: 20px;
 }
 
-
-
-/* Style navigation links */
 nav ul li a {
     text-decoration: none;
     color: white;
-    transition: color 0.3s; /* Add a smooth color transition */
-	font-size: 24px;
+    transition: color 0.3s;
+    font-size: 24px;
 }
 
-/* Style sections */
 section {
     height: 100vh;
     display: flex;
@@ -77,489 +68,457 @@ section {
     text-align: center;
 }
 
-/* Add some spacing between sections */
 section:not(:first-child) {
     margin-top: 20px;
 }
 
-/* Style section content */
 .section-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-	color:white;
+    color: white;
 }
 
-
-/* Add a smooth scroll effect */
 html {
     scroll-behavior: smooth;
 }
 
-/* Active navigation indicator */
 nav ul li a.active {
     font-weight: bold;
     text-decoration: underline;
 }
 
 .arrows {
-  width: 60px;
-  height: 72px;
-  position: absolute;
-  left: 50%;
-  margin-left: -30px;
-  bottom: 20px;
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
 }
 
 .arrows path {
-  stroke: #2994D1;
-  fill: transparent;
-  stroke-width: 1px;  
-  animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite; 
+    stroke: #2994D1;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@keyframes arrow {
+    0% { opacity: 0 }
+    40% { opacity: 1 }
+    80% { opacity: 0 }
+    100% { opacity: 0 }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@-webkit-keyframes arrow {
+    0% { opacity: 0 }
+    40% { opacity: 1 }
+    80% { opacity: 0 }
+    100% { opacity: 0 }
 }
 
 .arrows path.a1 {
-  animation-delay:-1s;
-  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
 }
 
 .arrows path.a2 {
-  animation-delay:-0.5s;
-  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
 }
 
-.arrows path.a3 { 
-  animation-delay:0s;
-  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
 }
 
-/* Style for the oval-shaped photo placeholder */
 .photo-placeholder {
-  width: 300px; /* Adjust the width as needed */
-  height: 300px; /* Adjust the height as needed */
-  border-radius: 50%; /* Create an oval shape */
-  margin-right: 20px; /* Add some space to the right of the oval */
-  float: right;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: right;
 }
 
-/* Style for the photo inside the oval */
 .photo-placeholder img {
-  width: 100%; /* Make the photo fill the oval */
-  height: 100%; /* Make the photo fill the oval */
-  border-radius: 50%; /* Ensure the photo follows the oval shape */
-  object-fit: cover; /* Ensure the photo covers the oval completely */
-
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.university{
-	width: 100px; /* Adjust the width as needed */
-  height: 100px; /* Adjust the height as needed */
-  border-radius: 50%; /* Create an oval shape */
-  margin-right: 20px; /* Add some space to the right of the oval */
-  margin-top: 30px;
-  float:left;
+.university {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 30px;
+    float: left;
 }
 
-.university img{
-	 width: 100%; /* Make the photo fill the oval */
-  height: 100%; /* Make the photo fill the oval */
-  border-radius: 50%; /* Ensure the photo follows the oval shape */
-  object-fit: cover; /* Ensure the photo covers the oval completely */
+.university img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-h3{
-	font-size: 20px;
-	margin-top:50px;
+h3 {
+    font-size: 20px;
+    margin-top: 50px;
 }
 
-a{
-	text-decoration:underline;
-	text-underline-offset:5px;
-	color: inherit;
+a {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: inherit;
 }
 
-#projects{
-	font-size:30px;
+#projects {
+    font-size: 30px;
 }
 
-#projects p{
-	font-size:15px;
-	padding-top:15px;
-	padding-bottom:15px;
+#projects p {
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-#about a{
-	text-decoration:none;
+#about a {
+    text-decoration: none;
 }
 
 div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 375px;
-  transition: transform .2s;
-  background-color: #f4f4f4;
-  color:black;
-  animation-name: picture;
-  animation-duration: 2s;
-  height:310px;
-  cursor: pointer;
-  
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 375px;
+    transition: transform .2s;
+    background-color: #f4f4f4;
+    color: black;
+    animation-name: picture;
+    animation-duration: 2s;
+    height: 310px;
+    cursor: pointer;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
-  transform: scale(1.5);
+    border: 1px solid #777;
+    transform: scale(1.5);
 }
 
 div.gallery img {
-  width: 100%;
-  height: 80%;
-  object-fit: contain;
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
 }
 
 div.gallery video {
-  width: 100%;
-  height: 80%;
-  object-fit: contain;
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
 }
 
-
+.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
 }
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-.desc{
-	font-size:20px;
-}
-
 
 .gallery img {
-  transition: opacity 0.5s ease-in-out;
-  opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
 }
+
 .gallery video {
-  transition: opacity 0.5s ease-in-out;
-  opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
 }
 
 #overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 #overlay2 {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
-#text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
+* {
+    box-sizing: border-box;
+}
 
-* {box-sizing:border-box}
-
-/* Slideshow container */
 .slideshow-container {
-  max-width: 1400px;
-  position: relative;
-  margin: auto;
+    max-width: 1400px;
+    position: relative;
+    margin: auto;
 }
-.slideshow-container img{
-	max-height:70%;
+
+.slideshow-container img {
+    max-height: 70%;
 }
-/* Hide the images by default */
+
 .mySlides {
-  display: none;
+    display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: -28px;
-  width: 100%;
-  text-align: center;
-  background-color:black;
-  opacity:1;
-  border-style: double;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -28px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    opacity: 1;
+    border-style: double;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
-  color: white;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  background-color:black;
-  opacity:0.7;
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.7;
 }
 
-.exit{
-	color: white;
-	font-size:20px;
-	padding:8px 12px;
-	position: absolute;
-	right:0;
-	top: 0;
-	float:right;
-	background-color:black;
-	opacity:0.7;
-	cursor:pointer;
+.exit {
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: right;
+    background-color: black;
+    opacity: 0.7;
 }
 
-
-/* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  margin-top:20px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 20px;
 }
 
 .dot.active, .dot:hover {
-  background-color: grey;
+    background-color: grey;
 }
 
-/* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
-@media screen and (min-width: 1000px){
-	#contact{
-	text-align: left;
-	line-height: 2;
-	font-size:30px;
+@media screen and (min-width: 1000px) {
+    #contact {
+        text-align: left;
+        line-height: 2;
+        font-size: 30px;
+    }
+
+    #contact p {
+        line-height: 1.5;
+        max-width: 60%;
+        font-size: 20px;
+    }
+
+    #contact ul {
+        float: right;
+        font-size: 20px;
+        list-style-type: none;
+    }
+
+    #contact img {
+        padding: 10px;
+    }
 }
-
-#contact p{
-	line-height: 1.5;
-	max-width: 60%;
-	font-size:20px;
-
-}
-
-#contact ul{
-	float:right;
-	font-size:20px;
-	list-style-type: none;
-}
-
-#contact img{
-	padding: 10px;
-}
-}
-
-
 
 @media screen and (max-width: 800px) {
+    header {
+        position: static;
+    }
 
-  /* Adjust header navigation for mobile */
-  header {
-    position: static; /* Reset the header position */
-  }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
 
-  nav ul {
-    display: flex;
-    flex-direction: column; /* Stack navigation links vertically */
-    align-items: center; /* Center-align navigation links */
-    padding: 0;
-  }
+    nav ul li {
+        padding: 15px 0;
+    }
 
-  nav ul li {
-    padding: 15px 0; /* Add spacing between navigation options */
-  }
+    .photo-placeholder {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        float: none;
+    }
 
-  /* Style the "About Me" photo placeholder for mobile */
-  .photo-placeholder {
-    width: 100%; /* Make it full width */
-    max-width: 300px; /* Set a maximum width */
-    margin: 0 auto; /* Center-align the photo */
-    float: none; /* Reset the float */
-  }
+    .photo-placeholder img {
+        max-width: 100%;
+        height: auto;
+    }
 
-  .photo-placeholder img {
-    max-width: 100%; /* Ensure the photo doesn't overflow */
-    height: auto; /* Automatically adjust the height */
-  }
+    h1 {
+        font-size: 40px;
+    }
 
-  /* Adjust font sizes for mobile */
-  h1 {
-    font-size: 40px; /* Reduce the font size */
-  }
+    h2 {
+        font-size: 24px;
+    }
 
-  h2 {
-    font-size: 24px; /* Reduce the font size */
-  }
+    #about p {
+        font-size: 16px;
+        max-width: 100%;
+    }
 
-  #about p {
-    font-size: 16px; /* Reduce the font size */
-    max-width: 100%; /* Ensure text doesn't overflow on small screens */
-  }
+    #contact ul {
+        text-align: center;
+        margin-top: 20px;
+    }
 
-  #contact ul {
-    text-align: center; /* Center-align social icons */
-    margin-top: 20px; /* Add spacing between icons and text */
-  }
+    #contact li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
 
-  #contact li {
-    display: flex; /* Display email and social icons side by side */
-    align-items: center; /* Vertically align items */
-    margin-bottom: 15px; /* Add spacing between list items */
-  }
+    #contact img {
+        margin-right: 10px;
+    }
 
-  #contact img {
-    margin-right: 10px; /* Add spacing between icons */
-  }
+    .gallery {
+        width: 100%;
+        max-width: 100%;
+    }
 
-  /* Adjust gallery images for mobile */
-  .gallery {
-    width: 100%; /* Make the gallery full width */
-    max-width: 100%; /* Ensure images don't overflow on small screens */
-  }
+    .gallery img, .gallery video {
+        width: 100%;
+        height: auto;
+    }
 
-  .gallery img, .gallery video {
-    width: 100%; /* Make images and videos fill the gallery */
-    height: auto; /* Automatically adjust the height */
-  }
+    .desc {
+        font-size: 14px;
+    }
 
-  /* Adjust font sizes in project descriptions for mobile */
-  .desc {
-    font-size: 14px; /* Reduce the font size */
-  }
+    #overlay {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
 
-  /* Style the overlay for mobile */
-  #overlay {
-    background-color: rgba(0, 0, 0, 0.9); /* Darken the overlay background */
-  }
+    .text, .numbertext, .exit {
+        font-size: 12px;
+    }
 
-  /* Adjust font size for slideshow captions on mobile */
-  .text, .numbertext, .exit {
-    font-size: 12px; /* Reduce the font size */
-  }
-  
-  /* Make sections taller on mobile */
-  section {
-    height: 175vh; /* Adjust the height as needed */
-  }
+    section {
+        height: 175vh;
+    }
 
-  /* Add spacing between sections on mobile */
-  section:not(:first-child) {
-    margin-top: 30px; /* Increase the spacing between sections */
-  }
+    section:not(:first-child) {
+        margin-top: 30px;
+    }
 
-  /* Adjust the contact section to fit within the viewport */
-  #contact {
-    padding: 20px; /* Add padding to the contact section */
-	line-height: 1.5;
-  }
+    #contact {
+        padding: 20px;
+        line-height: 1.5;
+    }
 
-  #contact ul {
-    padding-left: 0; /* Remove the left padding from the contact ul */
-  }
+    #contact ul {
+        padding-left: 0;
+    }
 
-  #contact ul li {
-    list-style-type: none; /* Remove list-style for contact links */
-    margin-bottom: 10px; /* Add spacing between contact links */
-  }
+    #contact ul li {
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
 
-  #contact p {
-    max-width: 100%; /* Ensure the paragraph doesn't overflow */
-    font-size: 18px; /* Adjust the font size */
-  }
+    #contact p {
+        max-width: 100%;
+        font-size: 18px;
+    }
 
-  #home {
-    height: 100vh; /* Adjust the height as needed */
-  }
-  #projects p{
-	  line-height: 1.5;
-  }
-  
-  .photo-placeholder {
-	 margin-bottom:50px; 
-  }
+    #home {
+        height: 100vh;
+    }
+
+    #projects p {
+        line-height: 1.5;
+    }
+
+    .photo-placeholder {
+        margin-bottom: 50px;
+    }
 }
